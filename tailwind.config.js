@@ -7,7 +7,14 @@ export default {
   ],
   theme: {
     
-    extend: {},
+    extend: {
+      colors: {
+        bgColor:"#0A192F",
+        primaryColor:"#64FFDA",
+        textColor:"#8892B0"
+       
+      }
+    },
      screens: {
 
       'sm': '476px',
@@ -26,12 +33,7 @@ export default {
          
     },
 
-    colors: {
-      bgColor:"#0A192F",
-      primaryColor:"#64FFDA",
-      textColor:"#8892B0"
-     
-    }
+  
   },
   plugins: [],
 }
