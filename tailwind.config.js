@@ -9,7 +9,7 @@ export default {
     
     extend: {
       colors: {
-        bgColor:"#0A192F",
+        bgColor:"#112240",
         primaryColor:"#64FFDA",
         textColor:"#8892B0"
        

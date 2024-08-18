@@ -2,6 +2,7 @@
 import About from "./About";
 import Header from "./Header"
 import Mail from "./Mail";
+import Project from "./Project";
 import Social from "./Social";
 
 const HomePage = ()  => {
@@ -11,6 +12,7 @@ const HomePage = ()  => {
         <About/>
         <Mail />
         <Social></Social>
+        <Project/>
       
 
         </>

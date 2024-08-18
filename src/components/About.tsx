@@ -2,53 +2,76 @@ import { useEffect, useState } from "react";
 import { Info } from "../User";
 //@ts-ignore
 import DOTS from "vanta/src/vanta.dots";
-const About = () => {
+//@ts-ignore
+import TRUNK from "vanta/src/vanta.trunk"
+import Typewriter from "typewriter-effect";
+import { Button } from "@mantine/core";
 
-    const [dots, setDots] = useState<any>(null)
-    useEffect(() => {
-      if (!dots) {
-        setDots(DOTS({
-            el: "#bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x64FFDA,
-            color2: 0x204aff,
-            backgroundColor:0x112249,
-            size: 2,
-            showLines:false,
-            spacing: 23.00
-          }))
-      }
-      return () => {
-        if (dots) dots.destroy()
-      }
-    }, [dots])
+const About = () => {
+  const [dots, setDots] = useState<any>(null);
+  const [trunk , setTrunk] = useState<any>(null);
+  useEffect(() => {
+    if (!dots) {
+      setDots(
+        DOTS({
+          el: "#bg",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x64ffda,
+          color2: 0x204aff,
+          backgroundColor: 0x112249,
+          size: 2,
+          showLines: false,
+          spacing: 23.0,
+        })
+      );
+    }
+    if(!trunk){
+      setTrunk(TRUNK({
+        el: "#photo",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x64ffda,
+        backgroundColor: 0x112249,
+        chaos: 5.50
+      })
+
+    );
+  }
+    return () => {
+      if (dots) dots.destroy();
+      if(trunk) trunk.destroy();
+    };
+  }, [] );
 
   return (
-    <div>
-        <div className="flex px-16 h-[90vh] " id="bg">
-                 <div>Hi ,I am</div>
-                 <div>{Info.name}</div>
-                 <div> I'm a <span></span></div>
-                 <div>Hello! My name is [kisun(kartik ) sah], and I am currently pursuing a Bachelor of Computer Applications (BCA). 
-                    As an enthusiastic and dedicated student, 
-                    I am passionate about technology and the ever-evolving world of software development.  
-                    In addition to my academic pursuits, I am a budding Full Stack Developer. 
-                    This role allows me to blend my knowledge of front-end and back-end 
-                    technologies to create dynamic and responsive web applications. My journey in full stack development with DSA
-                    has equipped me with a diverse skill set, including proficiency 
-                    in ( HTML, CSS, JavaScript, DSA , java , React, Node.js, Express, and MongoDB, among other tools and frameworks ).
-                    </div>
-        </div>
-        <div>
-
-        </div>
+    <div className="flex px-16 overflow-hidden justify-around items-center font-mono h-[80vh] " id="bg">
+      <div className="ml-20   w-3/5  flex flex-col">
+        <div className="text-primaryColor text-3xl">Hi ,I am </div>
+        <div className="text-white  font-extrabol text-[3.15rem]  ">{Info.name}</div>
+        <div className="text-white text-4xl flex font-semibold">I'm a &nbsp; <span className="text-primaryColor"> 
+          <Typewriter   options={{  strings: Info.stack,    autoStart: true,     loop: true,          }}
+    
+        /></span>   </div>
+              
+       <div className="text-textColor text-xl text-justify font-semibold my-5">{Info.Bio}</div>
+       <Button size="lg" className="!text-bgColor !w-fit" variant="filled" color="#64FFDA">Check Resume</Button>
+       
+      </div>
+          <div className="h-[50vh] flex justify-center items-center overflow-hidden rounded-full mr-14 w-[25vw]" id="photo">
+            <img className="w-[65%]  rounded-full shadow-xl" src="/me.jpg" alt="profile" />
+          </div>
     </div>
-  )
-}
+  );
+};
 export default About;

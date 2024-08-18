@@ -10,7 +10,7 @@ const navLinks = (col:Boolean) => {
 }
 const Header = () => {
     return (
-        <nav className="flex bg-bgColor dm-mono-regular text-primaryColor  items-center justify-between px-10  h-[15vh]">
+        <nav className="flex bg-bgColor  dm-mono-regular text-primaryColor  items-center justify-between px-10  h-[15vh]">
            <IconHexagonLetterK  size={58} className="z-10"/>
             <div className=" flex space-x-4 md-mx:hidden " >
 
