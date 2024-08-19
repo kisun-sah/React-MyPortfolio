@@ -1,3 +1,4 @@
+
 const Info = {
     name : "Kisun(Kartik) sah",
     stack :["Software Developer " , "Full stack developer" , "Competative programmer"],
@@ -92,5 +93,30 @@ const ProjectInfo = [
     }
 ]
 
-const technologies = ["React", "Node.js", "TypeScript", "GraphQL"]
-export {Info ,ProjectInfo , technologies}
+const SkillsInfo = [
+   {
+      title : "Frontend" ,
+      skills : ["HTML" , "CSS" ,"JavaScript" , "React Js" ,"Tailwind CSS" , "BootStrap" ,"Matrial UI" , "TypeScript"]
+   },
+   {
+    title : "Languages" ,
+    skills : ["C" , "C++" ,"Java" , "Adv_JavaScript" , "TypeScript" ]
+ },
+
+
+
+   {
+    title : "Backend" ,
+    skills : ["Node JS" , "Express JS" ,"MySQL" , "MongoDB" ]
+ },
+
+
+ {
+    title : "Tools" ,
+    skills : ["Git" , "Github" ,"VS Code" , "MongoDB" ,"Browser" ,"DSA" ]
+ },
+
+]
+
+
+export {Info ,ProjectInfo ,SkillsInfo }
