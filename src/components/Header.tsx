@@ -1,4 +1,4 @@
-import { Anchor } from "@mantine/core";
+
 import { IconHexagonLetterK } from "@tabler/icons-react";
 import Sidebar from "./Sidebar";
 

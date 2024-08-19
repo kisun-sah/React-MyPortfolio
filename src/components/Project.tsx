@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 import { ProjectInfo } from "../User";
 import ProjectCard from "./ProjectCard";
+
 
 const Project = () => {
     return (
@@ -7,19 +9,21 @@ const Project = () => {
             <h1 className="text-4xl mb-5 font-bold text-white"> 
                 <span className="text-primaryColor"> 02 &nbsp;</span> Projects
             </h1>
-            <div className="flex flex-wrap  justify-between">
+            <div className="grid gap-4 grid-cols-4 ">
         {
           ProjectInfo.map((project: any, index: number) => 
             <ProjectCard 
-                key={index} 
-                title={project.title} 
-                desc={project.desc} 
-                image={project.image} 
-                live={project.live} 
-                link={project.link} 
-                github={project.github} 
-            />
+                  key={index}
+                  title={project.title}
+                  desc={project.desc}
+                  image={project.image}
+                  live={project.live}
+                  link={project.link}
+                  github={project.github}   
+                  technologies={project.technologies}  
+                        />
         )
+        
      }
    </div>
         </div>

@@ -67,9 +67,9 @@ const About = () => {
        <div className="text-textColor text-xl text-justify font-semibold my-5">{Info.Bio}</div>
        <Button size="lg" className="!text-bgColor !w-fit" variant="filled" color="#64FFDA">Check Resume</Button>
        
-      </div>
-          <div className="h-[50vh] flex justify-center items-center overflow-hidden rounded-full mr-14 w-[25vw]" id="photo">
-            <img className="w-[65%]  rounded-full shadow-xl" src="/me.jpg" alt="profile" />
+      </div >
+          <div className="h-[50vh]  flex justify-center items-center overflow-hidden rounded-full mr-14 w-[25vw] shadow-[0_0_70px_0_#64FFDA] " id="photo">
+            <img className=" shadow-[0_0_10px_0_#64FFDA]   object-cover object-center h-72 w-[85%]  rounded-full " src="/me.jpg" alt="profile" />
           </div>
     </div>
   );

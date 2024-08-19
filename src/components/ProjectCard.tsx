@@ -1,14 +1,18 @@
 import { Card, Image, Text, Badge, Button, Group, Indicator } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import FullProjectModel from './FullProjectModel';
 
 const ProjectCard = (props:any) => {
+  const [opened, { open, close }] = useDisclosure(false);
     return (
-        <Card className=' !bg-bgColor mb-5 cursor-pointer hover:!scale-[1.02] hover:!shadow-[0_0_10px_0_#64FFDA]  !border-[#2f7b88] !border-2 !w-1/4' shadow="lg" padding="sm" radius="lg" withBorder>
+      <>
+        <Card onClick={open} className='w="665px" !bg-bgColor  mb-5 cursor-pointer transition-transform duration-300  hover:!scale-[1.02] hover:!shadow-[0_0_10px_0_#64FFDA]  !border-[#2f7b88] !border-2 ' shadow="lg" padding="sm" radius="lg" withBorder>
         <Card.Section className='p-3'>
           <Image
-          className='rounded-xl !shadow-[0_0_5px_1_#64FFDA]'
+          className='rounded-xl !shadow-[0_0_5px_0_#64FFDA]'
             src={props.image}
 
-            alt="props.image"
+            alt={props.image}
           />
         </Card.Section>
   
@@ -19,15 +23,29 @@ const ProjectCard = (props:any) => {
              </Text>
 
         </Group>
+
+        {/* <Group justify="space-between" mt="xs" mb="sm">
+             {props.technologies.map((tech:string ,index:number) => <Badge variant='light' color='red'>Badge</Badge>)}
+        </Group> */}
   
         <Text className='!text-justify' lineClamp={5} size="sm" c="dimmed">
         {props.desc}
         </Text>
   
-        <Button color="blue" fullWidth mt="md" radius="md">
+        <Button  onClick={open} className='!bg-primaryColor !text-bgColor' color="blue" fullWidth mt="md" radius="md">
            show more
         </Button>
       </Card>
+
+      <FullProjectModel opened={opened} close={close}
+        title={props.title} 
+        desc={props.desc} 
+        image={props.image} 
+        live={props.live} 
+        link={props.link} 
+        github={props.github} 
+        technologies={props.technologies}/>
+      </>
     )
 }
 
