@@ -2,7 +2,7 @@
 import { IconHexagonLetterK } from "@tabler/icons-react";
 import Sidebar from "./Sidebar";
 
-const Links =["About" ,"Projects"  , "Skills" ,"Experiences","Contacts"];
+const Links =["About" ,"Projects"  , "Skills" ,"Experiences","Contact"];
 const navLinks = (col:Boolean) => {
     return Links.map((Link , index) =>{
         return   <a className={`${col ? 'flex flex-col items-center':''} text-textColor text-lg font-mono hover:text-primaryColor`} href={`#${Link}`} > <span className="text-primaryColor">0{index +1}.</span>{Link}</a>

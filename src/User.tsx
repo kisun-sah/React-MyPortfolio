@@ -1,3 +1,5 @@
+import { title } from "process"
+import Skills from "./components/Skills"
 
 const Info = {
     name : "Kisun(Kartik) sah",
@@ -116,7 +118,47 @@ const SkillsInfo = [
     skills : ["Git" , "Github" ,"VS Code" , "MongoDB" ,"Browser" ,"DSA" ]
  },
 
+
+
+
+]
+
+const ExperienceInfo =  [
+    {
+    title: " Full stack development Industrial Internship   " ,
+    company:"EduVersity In collaboration  with Wipro technologies " ,
+    date: " Aug2024 - Nov 2024  ",
+    desc: "During this internship, I gained extensive, hands-on experience in the development and maintenance of web applications, working across both front-end and back-end technologies. This role provided the opportunity to collaborate closely with a team of developers, allowing me to contribute effectively to various stages of the software development lifecycle. Additionally, I was able to apply and refine best practices in full stack development, ensuring that the applications were not only functional but also robust, scalable, and aligned with industry standards."   ,
+
+    Skills: ["Html" , "Css" , "javascript ", "React js" , "Node js" ," Mongo DB" , "Express js" , "version control system " ] 
+
+    },
+
+    {
+        title: " Web development  Internship   " ,
+        company:"CipherByte Technologies  " ,
+        date: " Jun 2024 - Jul 2024  ",
+        desc: "This internship significantly enriched my technical expertise in web development by providing in-depth exposure to both front-end and back-end technologies. Through involvement in a diverse range of projects, I was able to hone my skills in crafting dynamic user interfaces as well as developing robust server-side logic. This experience allowed me to bridge the gap between client-side and server-side development, ensuring that I could effectively contribute to the creation of fully integrated web applications that meet industry standards and best practices."   ,
+        
+        Skills: ["Html" , "Css" , "javascript ", "React js" , "Node js" ," Mongo DB" , "Express js" ] 
+    
+        },
+
+
+        {
+            title: " Android Application development  " ,
+            company:"Engineer Core   " ,
+            date: " Jun 2023 - Jul 2023 ",
+            desc: "During this internship, I worked on developing and enhancing Android applications using Java and Kotlin. My responsibilities included writing clean, efficient code, debugging issues, and collaborating with the team to design and implement new features. I gained hands-on experience with Android Studio, XML for UI design, and RESTful APIs. This role involved working on real-world projects, contributing to app optimization, and gaining insights into mobile app development best practices."   ,
+            
+            Skills: ["java" , "XML" , "REST API ", "Andeoid SDK" , "Android Studio" ] 
+        
+            },
+    
+
+        
 ]
 
 
-export {Info ,ProjectInfo ,SkillsInfo }
+
+export {Info ,ProjectInfo ,SkillsInfo ,ExperienceInfo }

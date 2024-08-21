@@ -5,8 +5,8 @@ import ProjectCard from "./ProjectCard";
 
 const Project = () => {
     return (
-        <div className="px-16 mx-20 my-10 font-mono" id="projects">
-      <h1 className="text-4xl mb-5 text-center font-bold text-white">
+      <div className="px-16 mx-20 my-10 mb-28 font-mono" id="Projects">
+      <h1 className="text-4xl mb-10 text-center font-bold text-white">
         <span className="text-primaryColor">02 &nbsp;</span> Projects
       </h1>
             <div className="grid gap-4 grid-cols-4 ">
