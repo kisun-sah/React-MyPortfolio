@@ -1,16 +1,8 @@
-import { title } from "process"
-import Skills from "./components/Skills"
-
 const Info = {
     name : "Kisun(Kartik) sah",
     stack :["Software Developer " , "Full stack developer" , "Competative programmer"],
 
     Bio:"  Hello! My name is kisun(kartik ) sah  and I am currently pursuing a   Bachelor of Computer Applications (BCA). As an enthusiastic and dedicated student, I am passionate about technology and the  ever-evolving world of software development. In addition to my  academic pursuits, I am a budding Full Stack Developer. This role  allows me to blend my knowledge of front-end and back-end technologies  to create dynamic and responsive web   applications.     "  
-
- 
-
-
-
 
 
 }
@@ -159,6 +151,39 @@ const ExperienceInfo =  [
         
 ]
 
+const slugs = [
+    "typescript",
+    "javascript",
+    "dart",
+    "java",
+    "react",
+    "flutter",
+    "android",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "express",
+    "nextdotjs",
+    "prisma",
+    "amazonaws",
+    "postgresql",
+    "firebase",
+    "nginx",
+    "vercel",
+    "testinglibrary",
+    "jest",
+    "cypress",
+    "docker",
+    "git",
+    "jira",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+    "androidstudio",
+    "sonarqube",
+    "figma",
+  ];
 
 
-export {Info ,ProjectInfo ,SkillsInfo ,ExperienceInfo }
+
+export {Info ,ProjectInfo ,SkillsInfo ,ExperienceInfo ,slugs}

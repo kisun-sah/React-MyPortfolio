@@ -5,6 +5,7 @@ import { ExperienceInfo } from "../User";
 const TimelineItem = (items: any) => {
   return items.map((item: any, index: number) => (
     <Timeline.Item
+     data-aos="fade-up" data-aos-duration="800"
       key={index}
       className="!pt-12 !mb-12"
       bullet={<IconBriefcaseFilled color="bgColor" size={20} />}

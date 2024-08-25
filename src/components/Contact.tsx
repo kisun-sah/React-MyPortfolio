@@ -16,12 +16,12 @@ const Contact = () => {
         setFormDAta({...formData , [id]:value});
     }
   return (
-    <div className="px-16 mx-20 my-10 mb-28 font-mono" id="Contact">
+    <div   className="px-16 mx-20 my-10 mb-28 font-mono" id="Contact">
       <h1 className="text-4xl mb-10 text-center font-bold text-white">
         <span className="text-primaryColor">05 &nbsp;</span> Contact
       </h1>
 
-      <div className="flex flex-col m-auto w-[70%] border border-primaryColor     shadow-[0_0_10px_0_#64FFDA]  rounded-3xl p-8 gap-4">
+      <div data-aos="flip-left" data-aos-duration="800" className="flex flex-col m-auto w-[70%] border border-primaryColor     shadow-[0_0_10px_0_#64FFDA]  rounded-3xl p-8 gap-4">
         <div className="text-3xl text-white font-semibold">Let's Connect</div>
 
         <FloatingInput id="name" name="Name" value={formData.name} handleChange = {handleChange } />

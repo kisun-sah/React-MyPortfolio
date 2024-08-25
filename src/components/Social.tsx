@@ -17,11 +17,11 @@ const Social = () => {
     const SocialIcons = socialLinks.map((socialLink) =>{
 
       return   <a href={`${socialLink.link}`} target="blank" className="font-mono text-lg -rotate-90 hover:text-primaryColor hover:-translate-x-2 translate transform">
-        <socialLink.icon  size={30} />
+    <div data-aos="fade-up-right">  <socialLink.icon  size={30} />  </div>
     </a>
     })
   return (
-    <div className="flex items-center  text-textColor gap-10 fixed bottom-40   -left-48 rotate-90">
+    <div   className="flex items-center  text-textColor gap-10 fixed bottom-40   -left-48 rotate-90">
       {SocialIcons}
     <hr className="boder-[2px] w-40 rounded-full bg-bgColor border-textColor " />
 </div>

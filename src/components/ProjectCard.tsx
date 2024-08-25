@@ -6,6 +6,7 @@ const ProjectCard = (props:any) => {
   const [opened, { open, close }] = useDisclosure(false);
     return (
       <>
+       <div data-aos="fade-up" data-aos-duration="800"> 
         <Card onClick={open} className='w="665px" !bg-bgColor  mb-5 cursor-pointer transition-transform duration-300  hover:!scale-[1.02] hover:!shadow-[0_0_10px_0_#64FFDA]  !border-[#2f7b88] !border-2 ' shadow="lg" padding="sm" radius="lg" withBorder>
         <Card.Section className='p-3'>
           <Image
@@ -45,6 +46,7 @@ const ProjectCard = (props:any) => {
         link={props.link} 
         github={props.github} 
         technologies={props.technologies}/>
+        </div>
       </>
     )
 }
