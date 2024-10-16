@@ -31,8 +31,8 @@ export const cloudProps: Omit<ICloud, "children"> = {
     clickToFront: 500,
     tooltipDelay: 0,
     outlineColour: "#0000",
-    maxSpeed: 0.07,
-    minSpeed: 0.05,
+    maxSpeed: 0.04,
+    minSpeed: 0.02,
     // dragControl: false,
   },
 };
@@ -47,7 +47,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 50,
+    size: 42,
     aProps: {
       href: undefined,
       target: undefined,
@@ -80,10 +80,10 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }, [data, theme]);
 
   return (
-    // @ts-ignore
+     // @ts-ignore
     // eslint-disable-next-line react/jsx-no-comment-textnodes
     <Cloud {...cloudProps}>
-    // @ts-ignore
+     // @ts-ignore
       <>{renderedIcons}</>
     </Cloud>
   );

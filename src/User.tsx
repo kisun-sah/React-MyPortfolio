@@ -107,7 +107,7 @@ const SkillsInfo = [
 
  {
     title : "Tools" ,
-    skills : ["Git" , "Github" ,"VS Code" , "MongoDB" ,"Browser" ,"DSA" ]
+    skills : ["Git" , "Github" ,"VS Code" , "MongoDB Compass","Postman" ,"Browser" ,"DSA" ]
  },
 
 

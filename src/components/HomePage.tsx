@@ -13,17 +13,20 @@ import Social from "./Social";
 const HomePage = ()  => {
     return(
         <>
-        {/* <Header />
-        <About/>
-        <Mail />
-        <Social></Social>
-        <Project/>
-        <Skills/>
-        <Experience/>
-      
-        <Constact/>
-        <Footer/> */
-        <Loader/>
+        {
+         <>
+       
+         <Header />
+         <About />
+         <Mail /> 
+            <Social/>
+            <Project />
+            <Skills />
+            <Experience />
+            <Constact />
+            <Footer /> */
+            <Loader />
+            </>
         }
       
 
