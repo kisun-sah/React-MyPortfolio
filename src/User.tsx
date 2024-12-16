@@ -9,6 +9,16 @@ const Info = {
 
 const ProjectInfo = [
        {
+    title: "Ecommerce Application",
+    desc :  "An e-commerce application is a digital platform that facilitates the buying and selling of goods and services over the internet. It allows businesses to showcase their products or services, manage transactions, and interact with customers. The main features and functionalities of an e-commerce application  allowing users to fetch data on all available coins, track their prices, and analyze various features." ,
+    image:"Eco.png",
+    live : true ,
+    technologies:[ "frontEnd " ,"Framework ","React js", "node js", "MongoDb " ,"Express js "],
+    link : "https://ecomerce001.onrender.com/auth/login",
+    github :"https://github.com/kisun-sah/E-Commerce-Application"
+
+ },
+ {
     title: "CryptoTracker",
     desc :  "CoinGeckoCrypto Tracker is a comprehensive API service designed to track cryptocurrency prices and features. It offers functionality similar to CoinGecko, allowing users to fetch data on all available coins, track their prices, and analyze various features." ,
     image:"crypto.png",
@@ -78,13 +88,13 @@ const ProjectInfo = [
                              
     } ,
 
-    {
-        title: "Sanke game",
-        desc:"In this Snake Game, the player controls a snake that moves around the screen, eating food to grow longer. The objective is to make the snake as long as possible without hitting the walls or colliding with its own tail. As the snake eats more food, it becomes faster and more challenging to control.",
-        image:"snake.png",
-        live:false,
-        github:"https://github.com/kisun-sah/JavaScript-Project/tree/main/SnakeGame"
-    }
+    // {
+    //     title: "Sanke game",
+    //     desc:"In this Snake Game, the player controls a snake that moves around the screen, eating food to grow longer. The objective is to make the snake as long as possible without hitting the walls or colliding with its own tail. As the snake eats more food, it becomes faster and more challenging to control.",
+    //     image:"snake.png",
+    //     live:false,
+    //     github:"https://github.com/kisun-sah/JavaScript-Project/tree/main/SnakeGame"
+    // }
 ]
 
 const SkillsInfo = [
@@ -117,9 +127,19 @@ const SkillsInfo = [
 
 const ExperienceInfo =  [
     {
+        title: " Software Development  " ,
+        company:"Emicron Techsolutions Pvt Ltd " ,
+        date: "  Jun2024 - Nov 2024  ",
+        desc: "During this internship, I gained extensive, hands-on experience in the development and maintenance of web applications, working across both front-end and back-end technologies. This role provided the opportunity to collaborate closely with a team of developers, allowing me to contribute effectively to various stages of the software development lifecycle. Additionally, I was able to apply and refine best practices in full stack development, ensuring that the applications were not only functional but also robust, scalable, and aligned with industry standards."   ,
+    
+        Skills: ["Html" , "Css" , "javascript ", "React js" , "Node js" ," Mongo DB" , "Express js" , "version control system " ] 
+    
+        },
+     
+    {
     title: " Full stack development Industrial Internship   " ,
     company:"EduVersity In collaboration  with Wipro technologies " ,
-    date: " Aug2024 - Nov 2024  ",
+    date: " Aug2024 - OCT2024  ",
     desc: "During this internship, I gained extensive, hands-on experience in the development and maintenance of web applications, working across both front-end and back-end technologies. This role provided the opportunity to collaborate closely with a team of developers, allowing me to contribute effectively to various stages of the software development lifecycle. Additionally, I was able to apply and refine best practices in full stack development, ensuring that the applications were not only functional but also robust, scalable, and aligned with industry standards."   ,
 
     Skills: ["Html" , "Css" , "javascript ", "React js" , "Node js" ," Mongo DB" , "Express js" , "version control system " ] 

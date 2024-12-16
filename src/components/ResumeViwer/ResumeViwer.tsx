@@ -29,7 +29,7 @@ const ResumeViwer = (props: any) => {
             <ActionIcon 
             className="!text-primaryColor"
             component="a"
-            href="./kisun001.pdf"
+            href="./Kisun Sah(software developer).pdf"
             download={Info.name}
             variant="outline" 
             color="#64FFDA" 
@@ -46,7 +46,7 @@ const ResumeViwer = (props: any) => {
           />
         </Modal.Header>
         <Modal.Body className="!bg-bgColor  !pt-4 !border-primaryColor !border-2 !rounded-bl-3xl !rounded-br-3xl !border-t-0 ">
-          <Document file="./kisun001.pdf">
+          <Document file="./Kisun Sah(software developer).pdf">
             <Page
               pageNumber={1}
               renderTextLayer={false}

@@ -46,7 +46,7 @@ const About = () => {
             </Button>
             <Button
               component="a"
-              href="./kisun001.pdf"
+              href="./Kisun Sah(software developer).pdf"
               download={Info.name}
               size="md"
               className="!text-primaryColor w-full sm:w-fit sm:text-lg"
